@@ -16,20 +16,6 @@
       padding-top: 28px;
     }
 
-    .back-button {
-      background: none;
-      border: none;
-      padding: 8px;
-      margin-left: -8px;
-      cursor: pointer;
-    }
-
-    .back-button svg {
-      width: 24px;
-      height: 24px;
-      stroke: white;
-    }
-
     .content {
       margin-top: 24px;
     }
@@ -51,30 +37,16 @@
       margin-top: 24px;
     }
 
-    .email-icon {
-      position: absolute;
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      color: #8E8E93;
-    }
-
     input {
       width: 100%;
       height: 48px;
       background-color: #2C2C2E;
       border: none;
       border-radius: 12px;
-      padding: 0 16px 0 44px;
+      padding: 0 16px;
       color: white;
       font-size: 14px;
       box-sizing: border-box;
-    }
-
-    input::placeholder {
-      color: #8E8E93;
     }
 
     button {
@@ -96,30 +68,28 @@
   </style>
 </head>
 <body>
+
   <div class="container">
-    
     <div class="content">
-      <h1>payment method</h1>
-      <h4 class="description">note all payment should be made to this GREY TAG</h4>
-      
-      
+      <h1>Payment Method</h1>
+      <h4 class="description">Note: All payments should be made to this GREY TAG.</h4>
+
       <div class="input-wrapper">
-        <p>GREY TAG</P>
-        <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        </svg>
-        <input type="text"  value="@Michellemanagement">
+        <p>GREY TAG</p>
+        <input type="text" value="@Michellemanagement">
       </div>
-<!-- <div class="input-wrapper">
-        <p></P>
-        <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        </svg>
-        <input type="text"  value="bitcoin">
-      </div>-->
-    
-    
-     <a href="https://michellemorronfanclub.blogspot.com/p/body-margin-0-padding-0-font-family.html" style="text-decoration: none;">
-        <button>Confirm payment</button>
+
+      <a href="https://judahcharlesdaniel.github.io/michellemoroe/" style="text-decoration: none;">
+        <button onclick="verifyPayment()">Confirm Payment</button>
+      </a>
     </div>
   </div>
+
+  <script>
+    function verifyPayment() {
+      alert("We are currently verifying your payment. We will get back to you in 24 hours.");
+    }
+  </script>
+
 </body>
 </html>
